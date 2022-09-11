@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+}
+
+body{
+    background: #F3F5FC;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+#botoes{
+    position: absolute;
+    top: 40vh;
+    left: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#jogar{
+    background-color: #0A3871;
+    color: #fff;
+
+    padding: 30px 80px;
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+}
+
+#nova-palavra{
+    background-color: #fff;
+    color: #0A3871;
+
+    padding: 30px 60px;
+
+    border-radius: 10px;
+    border: 1px solid #0A3871;
+}
+
+#botoes2{
+    position: absolute;
+    top: 70vh;
+    left: 30vw;
+}
+
+#salvar{
+    background-color: #0A3871;
+    color: #fff;
+
+    padding: 10px 50px;
+
+    border-radius: 10px;
+}
+
+#cancelar{
+    background-color: #fff;
+    color: #0A3871;
+
+    padding: 10px 60px;
+
+    border-radius: 10px;
+    border: 1px solid #0A3871;
+}
+
+#botoes3{
+    position: absolute;
+    top: 83vh;
+    left: 35vw;
+}
+
+#novo-jogo{
+    background-color: #0A3871;
+    color: #fff;
+
+    padding: 10px 60px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+#desistir{
+    background-color: #fff;
+    color: #0A3871;
+
+    padding: 10px 70px;
+
+    border-radius: 10px;
+    border: 1px solid #0A3871;
+}
+
+#entrada-texto1 {
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    color: #0A3871;
+    font-family: 'Inter', sans-serif;
+    resize: none;
+    border: none;
+    outline: none;
+    background: #F3F5FC;
+
+}
+
+#entrada-texto1::placeholder {
+    color: #0A3871;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: #0A3871;
+    width: 100vw;
+    padding: 15px 15px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-device-width: 600px){
+    #botoes{
+        left: 40px;
+    }
+    #botoes3{
+        display: flex;
+        flex-direction: column;
+        top: 70vh;
+        left: 20vw;
+    }
+    #novo-jogo{
+        padding: 15px 70px;
+        margin-bottom: 5px;
+
+    }
+    
+    #desistir{
+        padding: 15px 76px;
+    }
+}
+
+#canvas{
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+}
